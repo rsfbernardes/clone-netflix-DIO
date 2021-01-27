@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style/main.css">
 
     <!--owl css-->
-    <link rel="stylesheet" href="/NetFlix/style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/NetFlix/style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
     
     <!--responsividade-->
-    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="/style/responsive.css">
 
     <title>NETFLIX CLONE</title>
 </head>
@@ -20,11 +20,11 @@
             <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
+                <a href="#Minha-Lista" >Séries</a>
+                <a href="#Originais-Netflix">Filmes</a>
                 <a href="#">Documentários</a>
                 <i class="fas fa-search"></i>
-                <i class="fas fa-gift"></i>
+                <i class="fas fa-gift" onclick="gift ()"></i>
             </nav>
         </div>
     </header>
@@ -48,10 +48,10 @@
         </div>
     </main>
 
-    <div class="carrossel-filmes">Minha Lista
+    <div class="carrossel-filmes" id="Minha-Lista">Minha Lista
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="carrossel1" class="box-film" src="img/billions.jpg" alt="Billions">
+                <img class="carrossel1" class="box-film" src="/img/billions.jpg" alt="Billions">
             </div>
             <div class="item">
                 <img class="carrossel1" src="img/anne.jpg" alt="Anne With an E" class="box-film">
@@ -84,7 +84,7 @@
 
     </div>
 
-    <div class="carrossel-filmes">Originais Netflix
+    <div class="carrossel-filmes" id="Originais-Netflix">Originais Netflix
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="box-film" src="img/atypical.jpg" alt="Atypical">
@@ -154,7 +154,7 @@
         </div>
 
         <div class="rodape">
-            <button id="botao-rodape" role="button" onclick="codigo_service()">Código do serviço</button>
+            <button id="botao-rodape" role="button" onclick="service_code ()">Código do serviço</button>
         </div>
 
         <p class="rodape">&copy; 1997-2021 Netflix, Inc {i-09cd04bf729a8f9d8}</p>
@@ -164,9 +164,9 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/7a8c3384cb.js" crossorigin="anonymous"></script>
-    <script src="/NetFlix/js/owl/jquery.min.js"></script>
-    <script src="/NetFlix/js/owl/owl.carousel.min.js"></script>
-    <script src="/NetFlix/js/owl/setup.js"></script>
-    <script src="/NetFlix/js/script.js"></script>
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/setup.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
